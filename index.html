@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+</head>
+<body>
+    <header>
+        <h3>Portfolio</h3>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: #EEE3CB;
+}
+
+header {
+    background: #503C3C;
+    color: #fff;
+    padding: 7px;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    
+    color: #607274;
+    top: 28px;
+    width: 100%;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+    font-size: 35px;
+}
+img{
+     width:300px; 
+     height:350px;
+    
+}
+.image{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    border-radius: 40%;
+}
+.card-img-overlay {
+    top: 15%;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #A87C7C;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 40px 0;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #503C3C;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: left;
+    background-color: #A87C7C;
+    color: #ffffff;    
+}
+.iniba {
+    max-width: 1000px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
+    background-image: url('rosegold.jpg');
+    color: #ffffff;
+}
+
+
+
+.project {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #A87C7C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3E3232;
+}
+
+    </style>
+        <nav>
+            <ul>
+                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section id="home">
+        <div class="content">
+            <h1>Hi!
+            <br>This is
+            <br>Genelyn C. Deliola
+            <br>an IT student</h1>
+            
+            <p>As an aspiring Web Developer and Graphic Designer I created <br> this portfolio to show my ability to create and design my own design of <br> Website. Through practice and put a lot of <br> efforts making this one and I believe that I can be a great web <br> developer someday. I am willing to share my knowledge and skills in web <br> development to other people out there who wanted to create a web page.</p>
+          
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="iniba">
+            <h2>About Me</h2>
+            <p>I'M Genelyn C. Deliola, 20 years old. I am a passionate student taking Bachelor of Science in <br> Information Technology in Dalubhasaan ng Lungsod ng Lucena. I chose BSIT as my course because <br> I am passionate about technology and I want to learn more about the different aspects of Information Technology. <br> My journey in Web developing started now, During 3rd year college. </p>
+     <img src="pic.png" class="card-img-overlay"></img>
+        </div>
+    </section>
+    <img src="pic2.png" class="image">
+    
+    <section id="projects">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of works</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of works</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of works</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>gen's details summary</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
